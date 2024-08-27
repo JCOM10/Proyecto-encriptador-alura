@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorProyecto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header">
+    <img src="assets/alura logo.png" alt="Logo de aluraLatam" class="header__logo">
+  </header>
+ <main class="presentación">
+  <section class="Presentacion__Contenido">
+    <textarea placeholder="Podria ingresar su texto aquí" rows="14" class="Presentacion__Contenido__entrada"></textarea>
+    <p class="advertencia__letra">ingrese solo letras minusculas por favor</p>
+    <div class="presentacion__Botones">
+      <button class="presentacion__Botones__encriptar" onclick="encriptar()">Encriptar</button>
+      <button class=" presentacion__Botones__desencriptar" onclick="desencriptar()">desencriptar</button>
+    </div>
+  </section>
+  <section class="presentacion__desencriptado">
+   <img class="presentacion__imagen__desecriptado" src="./assets/muñeco alura.png" alt="Hombre con una lupa en mano ">
+   <div class="presentacion__desencriptado__encriptando" id="outputText">Ningun mensaje ha sido  encontrado</div>
+   <button class="presentacion__desencriptado__botones__copy" onclick="copiar()" id="copyButton" style="display:none;">Copiar</button>
+  </section>
+ </main>
+<footer class="footer">
+  <p>Desarrollado por Julio Olais</p>
+</footer>
+<script src="./Funcionamiento.js"></script>
+</body>
+</html>
